@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Form</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <style>
+      .detils{
+        position: absolute;
+        left: 0;
+        top: 50px;
+        margin-left: 20px;
+      }
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/create">Create New Hisab</a></li>
+     
+    </ul>
+</nav>
+
+<div class="detils">
+<h4>Here's Hisab Kitab <%= fn.split(".")[0]  %> date</h4>
+<a href="/edit/<%= fn  %>">Edit</a>
+
+<p><%= data  %></p>
+</div>
+</body>
+</html>
